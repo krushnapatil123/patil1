@@ -1,0 +1,8 @@
+System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+			
+			new loginpage2(driver).login("Admin","admin123").logout();
