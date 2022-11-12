@@ -6,3 +6,8 @@ System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 			driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 			
 			new loginpage2(driver).login("Admin","admin123").logout();
+			
+			
+			nav.forword();
+		        nav.close();
+		        nav.back();
